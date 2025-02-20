@@ -1,0 +1,160 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e8e8;
+}
+
+.wrapper {
+  width: 450px;
+  background: linear-gradient(180deg, #dcf9e0 0%, #fff 30.21%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+  margin: 40px 0 15px 0;
+}
+
+.desc {
+  max-width: 80%;
+  margin: auto;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #888;
+}
+
+.tab-wrapper {
+  position: relative;
+  height: 32px;
+  background: #ebebec;
+  padding: 2px;
+  margin: 10px 20px 0 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tab {
+  width: 50%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.indicator {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  left: 2px;
+  top: 2px;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.04);
+  transition: 0.3s ease-out;
+  z-index: 1;
+}
+
+.tab:nth-child(2):hover ~ .indicator {
+  left: calc(50% - 2px);
+}
+
+.details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details .heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.details ul li span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ebebec;
+}
+
+.footer label {
+  position: relative;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.footer label sup {
+  font-size: 15px;
+}
+
+.footer label sub {
+  position: absolute;
+  font-size: 11px;
+  bottom: 10px;
+  font-weight: 600;
+  color: #888;
+}
+
+.footer .btn {
+  width: 200px;
+  height: 40px;
+  background: #0bdd12;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.footer .btn:hover {
+  background: #09c50f;
+}
